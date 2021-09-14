@@ -5,46 +5,174 @@
 </head>
 <body style="background-color:#0e0e0e;">
 
-<h1 style ="font-family:Calibri;text-align:center;font-style:italic;font-size:60px;color:#EEEEEE;font-style:underline"><b>goop's portfolio</b></h1>
+<h1><b>goop's portfolio</b></h1>
 
+<div class = "p0">
 
-<p style = "font-family:Calibri;text-align:center;color:#F1E9DA;font-size:20px">Hi, I'm goop. I like to build things in minecraft, and here is where you can find them. :).</p>
-<p style = "font-family:Calibri;text-align:center;color:#F1E9DA;font-size:20px"><b>Discord: goop#0262</b></p>
-<p style = "font-family:Calibri;text-align:center;color:#F1E9DA;font-size:20px"><b>Email: goooop@protonmail.com</b></p>
-<b><p style = "font-family:Calibri;color:#b0a998;font-size:30px;top:700px;left:840px;position:absolute">images are clickable!</p></b>
+    <p>Discord: goop#0262</p>
 
+</div>
+<div class = "p1">
 
+    <p>Email: goooop@protonmail.com</p>
 
+</div>
+<p>.</p>
+<p>.</p>
 
-
-<u><i><p style = "font-family:Calibri;color:#b0a998;font-size:20px;top:357px;left:120px;position:absolute">"God's ruins"</p></i></u>
-
-<u><i><p style = "font-family:Calibri;color:#b0a998;font-size:20px;top:357px;left:120px;position:absolute">"Redstone Ideas" - WIP</p></i></u>
-
-<u><i><p style = "font-family:Calibri;color:#b0a998;font-size:20px;top:357px;left:120px;position:absolute">"Heaven and Hell" - WIP</p></i></u>
-
-
-
-
-
-
-<p><a href="https://goopc.github.io/godsruins">
-<img src ="https://i.ibb.co/YD677YN/2021-01-16-15-03-44.png" style="width:400px;height:250px;top:400px;left:120px;position:absolute;border: 5px solid #b0a998"> 
-</p></a>
-<p><a href="https://goopc.github.io/redstoneideas">
-<img src ="https://i.ibb.co/P5Tfpw3/2021-01-16-15-07-49.png" style="width:400px;height:250px;top:400px;left:765px;position:absolute;border: 5px solid #b0a998"> 
-</p></a>
-<p><a href="https://goopc.github.io/heavenandhell">
-<img src ="https://i.ibb.co/tLzZ1B1/2021-01-16-14-57-10.png" style="width:400px;height:250px;top:400px;left:1400px;position:absolute;border: 5px solid #b0a998"> 
-</p></a>
+</div>
 
 
 
 
 
 
+
+<div id="container">
+    <div class="text">"God's ruins"</div>
+    <div class="text">"Redstone Ideas" - WIP</div>
+    <div class="text">"Heaven and Hell" - WIP</div>
+    <a href="godsruins.html">
+    <img src="https://i.ibb.co/YD677YN/2021-01-16-15-03-44.png" class="img">
+    </a>
+    <a href="hedstonehdeas.html">
+    <img src="https://i.ibb.co/P5Tfpw3/2021-01-16-15-07-49.png" class="img">
+    </a>
+    <a href="heavenandhell.html">
+    <img src="https://i.ibb.co/tLzZ1B1/2021-01-16-14-57-10.png" class="img">
+    </a>    
+  </div>
+
+
+<style>
+#container {
+
+/* displays the element and its contents using
+   the CSS grid layout: */
+display: grid;
+
+/* defines three columns each of which takes
+   one fractional unit of the available space: */
+grid-template-columns: repeat(1fr, 3);
+
+/* defines two rows each of which is set to
+   'min-content', which allow the contained
+   elements to take the vertical space they
+   require: */
+grid-template-rows: repeat(min-content, 2);
+margin: 0 auto;
+}
+
+div.text,
+img.img {
+
+/* to allow for a small 'gutter' between
+   columns: */
+max-width: 90%;
+text-align: center;
+}
+
+img:hover{
+    border:1px solid #0e0e0e;;
+    cursor:pointer;
+}
+
+h1{
+    font-family:Calibri;
+    text-align:center;
+    font-style:italic;
+    font-size:60px;
+    color:#EEEEEE;
+    font-style:underline;
+}
+
+
+div.text {
+
+/* assigning the matched elements to
+   the first row, allowing the brwoser
+   to place the elements in the correct
+   grid box according to the order in
+   the DOM: */
+grid-row: 1;
+font-family:Calibri;
+color:#b0a998;
+font-size:20px;
+font-style: italic;
+}
+
+img.img {
+grid-row: 2;
+}
+
+.p0{
+    text-align:center;
+    color:white;
+    position:relative;
+    font-family:monospace;
+    font-size:15px;
+    font-weight:bold;
+    border-radius: 8px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.p0:hover{
+    text-shadow:0.7px 0.7px rgb(160, 160, 160) ;
+    cursor:default;
+    
+}
+
+
+.p1{
+    text-align:center;
+    color:white;
+    position:relative;
+    font-family:monospace;
+    font-size:15px;
+    font-weight:bold;
+    border-radius: 8px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.p1:hover{
+    text-shadow:0.7px 0.7px rgb(160, 160, 160) ;
+    cursor:default;
+}
+
+
+}
+section {
+    color:white;
+    }
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f162; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
 
 </body>
 </html>
+
 
 
